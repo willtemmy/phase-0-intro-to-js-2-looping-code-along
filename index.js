@@ -16,23 +16,20 @@ function wrapGifts(gifts) {
 wrapGifts(gifts);  
 
 function writeCards(names, event){
-    for(i=0; i<names.length; i++){
-        console.log(`Thank you, ${names[i]}, for the wonderful ${event} gift`);
-    };
+    for(let i=0; i<names.length; i++){
+        console.log(`Thank you, ${names[i]}, for the wonderful ${event[i]} gift`);
+    }
 
     return names,event;
+}
+
+writeCards(["Guadalupe", "Ollie", "Aki"], "surprise");
+
+function countDown(number){
+  let i = 0;
+  while(i=number+1){
+    console.log(`number: ${number}`);
+    number--
+      i++;
+  };
 };
-
-writeCards(["Ada", "Brendan", "Ali"], "birthday");
-
-/*function countDown(number){
-    let i = 10;
-    while(i>0){
-        console.log(`number: ${number[i]}`);
-        i--;
-    };
-
-    return number;
-};
-
-countDown(10);*/
